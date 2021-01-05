@@ -4,12 +4,12 @@
 
 <p>Click the button to display todays day of the week.</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="findTheDay()">Try it</button>
 
 <p id="demo"></p>
 
 <script>
-function myFunction() {
+function findTheDay() {
   var dayofWeek = new Date();
   var weekday = new Array(7);
   weekday[0] = "Sunday";
@@ -22,6 +22,8 @@ function myFunction() {
 
   var n = weekday[dayofWeek.getDay()];
   document.getElementById("demo").innerHTML = n;
+
+ 
 }
 </script>
 
