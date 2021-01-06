@@ -13,5 +13,12 @@ function findTheDay() {
   var n = weekday[dayofWeek.getDay()];
   document.getElementById("demo").innerHTML = n;
 
+
+  if(n == weekday[3]){
+    console.log("It is Wednesday!");
+  }
+  else{
+    console.log("It is not Wednesday.")
+  }
  
 }
